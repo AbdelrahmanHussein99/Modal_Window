@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal Window</title>
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+
+<body class=" relative pt-6 h-screen   bg-linear-to-tr from-green-500 to-green-400">
+  <section class=" flex justify-evenly items-center ">
+    <button class="show-modal">Show modal 1</button>
+    <button class="show-modal">Show modal 2</button>
+    <button class="show-modal">Show modal 3</button>
+  </section>
+  <div
+    class="modal hidden rounded-3xl z-10 bg-sky-100 flex flex-col  p-10  box-content font-semibold w-1/2  absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%]">
+    <button class="close-modal cursor-pointer absolute top-3 right-5 text-2xl font-bold self-end">&times;</button>
+
+    <h1 class="text-2xl  pb-2">I'm a modal window </h1>
+    <p class="text-lg text-base/7">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+      mollit anim id est laborum.
+    </p>
+
+  </div>
+  <div class="overlay  cursor-pointer hidden absolute inset-0 bg-gray-900 opacity-30"></div>
+  <script src="src/JS/script.js"></script>
+</body>
+
+</html>
